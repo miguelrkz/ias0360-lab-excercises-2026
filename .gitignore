@@ -1,3 +1,9 @@
+.vscode-server/
+.cache/
+.copilot/
+*.aux
+*.log
+
 
 # Operating system files
 .DS_Store

@@ -89,8 +89,8 @@ exec docker run -it --rm \
     --network host \
     -e "HOST_UID=$(id -u)" \
     -e "HOST_GID=$(id -g)" \
-    -v "${SCRIPT_DIR}:${CONTAINER_HOME}" \
-    -v /dev/bus/usb:/dev/bus/usb \
+    -v "${SCRIPT_DIR}:${CONTAINER_HOME}:z" \
+    -v /dev/bus/usb:/dev/bus/usb:z \
     -w "${CONTAINER_HOME}" \
     "${IMAGE_NAME}" \
     bash

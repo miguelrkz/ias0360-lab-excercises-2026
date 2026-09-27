@@ -195,3 +195,8 @@ int main_4(void)
 
     return 0;
 }
+
+
+int main(void) {
+    return main_1();
+}
